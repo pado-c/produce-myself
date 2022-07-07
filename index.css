@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap");
+@import url(//font.elice.io/EliceDigitalBaeum.css);
+* {
+  /* font-family: "Roboto",sans-serif; */
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.nav__link {
+  font-size: 4.5rem;
+  color: #fff;
+  font-style: italic;
+  font-family: "Roboto";
+  margin-bottom: 5px;
+  display: grid;
+  justify-items: center;
+  text-shadow: -0.5px -1px 1px rgb(210, 210, 210);
+}
+
+#about:hover {
+  background: linear-gradient(to top, #ff2a2a 30%, transparent 10%);
+}
+
+#elice:hover {
+  background: linear-gradient(to top, #0471ff 30%, transparent 10%);
+}
+
+#contact:hover {
+  background: linear-gradient(to top, #ffc020 30%, transparent 10%);
+}
+
+.nav__last {
+  color: white;
+  opacity: 50%;
+  font-family: sans-serif;
+  font-size: 14px;
+  display: grid;
+  justify-items: center;
+  padding-top: 10vh;
+}
+
+.last {
+  padding-top: 3px;
+}
+
+@media only screen and (max-width: 20rem) {
+  :root {
+    font-size: 10px;
+    --link-translate-x: 2rem;
+  }
+}
+
+@keyframes move {
+  100% {
+    transform: translate3d(0, 0, 1px) rotate(360deg);
+  }
+}
+
+.background {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.background span {
+  width: 20vmin;
+  height: 20vmin;
+  border-radius: 20vmin;
+  backface-visibility: hidden;
+  position: absolute;
+  animation: move;
+  animation-duration: 38;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.background span:nth-child(0) {
+  top: 22%;
+  left: 84%;
+  animation-duration: 44s;
+  animation-delay: -87s;
+  transform-origin: -7vw -6vh;
+}
+.background span:nth-child(1) {
+  top: 84%;
+  left: 31%;
+  animation-duration: 20s;
+  animation-delay: -35s;
+  transform-origin: -11vw 18vh;
+}
+.background span:nth-child(2) {
+  top: 28%;
+  left: 48%;
+  animation-duration: 56s;
+  animation-delay: -86s;
+  transform-origin: -23vw -10vh;
+}
+.background span:nth-child(3) {
+  top: 97%;
+  left: 27%;
+  animation-duration: 123s;
+  animation-delay: -115s;
+  transform-origin: 20vw 8vh;
+}
+.background span:nth-child(4) {
+  top: 95%;
+  left: 11%;
+  animation-duration: 9s;
+  animation-delay: -15s;
+  transform-origin: -16vw -16vh;
+}
+.background span:nth-child(5) {
+  top: 35%;
+  left: 86%;
+  animation-duration: 50s;
+  animation-delay: -68s;
+  transform-origin: 22vw -11vh;
+}
+.background span:nth-child(6) {
+  top: 55%;
+  left: 86%;
+  animation-duration: 48s;
+  animation-delay: -22s;
+  transform-origin: 6vw -5vh;
+}
+.background span:nth-child(7) {
+  top: 27%;
+  left: 25%;
+  animation-duration: 95s;
+  animation-delay: -27s;
+  transform-origin: 16vw 18vh;
+}
+.background span:nth-child(8) {
+  top: 83%;
+  left: 35%;
+  animation-duration: 110s;
+  animation-delay: -20s;
+  transform-origin: -3vw 23vh;
+}
+.background span:nth-child(9) {
+  top: 23%;
+  left: 39%;
+  animation-duration: 96s;
+  animation-delay: -105s;
+  transform-origin: -13vw -9vh;
+}

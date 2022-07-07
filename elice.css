@@ -1,0 +1,185 @@
+@font-face {
+  font-family: "Elice Digital Baeum";
+  src: url(EliceDigitalBaeum_Bold.ttf) format("truetype");
+}
+
+* {
+  font-family: "Elice Digital Baeum", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  /* height: 100vh; */
+  background: #000;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+#button {
+  margin-top: 40px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+#next-button {
+  padding-left: 10px;
+}
+#blank {
+  margin-bottom: 20px;
+}
+#back-button:hover {
+  transform: scale(1.2);
+}
+#next-button:hover {
+  transform: scale(1.2);
+}
+
+.bubble {
+  color: black;
+  font-size: 15px;
+}
+
+.ques1 {
+  position: relative;
+  clear: both;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  padding: 20px;
+  width: 450px;
+  height: 25px;
+  color: #fff;
+  border-radius: 10px;
+  background-color: rgb(244, 209, 255);
+}
+.ques1:after {
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: -30px;
+  border-right: 30px solid rgb(244, 209, 255);
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+}
+
+.answer1 {
+  position: relative;
+  clear: both;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  padding: 20px;
+  width: 450px;
+  height: 115px;
+  color: #fff;
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+}
+.answer1:after {
+  content: "";
+  position: absolute;
+  top: 40px;
+  right: -30px;
+  border-left: 30px solid rgb(255, 255, 255);
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+}
+
+.pull {
+  position: relative;
+  clear: both;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  padding: 20px;
+  width: 450px;
+  height: 72px;
+  color: #fff;
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+}
+.pull:after {
+  content: "";
+  position: absolute;
+  top: 40px;
+  right: -30px;
+  border-left: 30px solid rgb(255, 255, 255);
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+}
+
+#rabbit-smile {
+  display: block;
+  z-index: -1;
+  width: 250px;
+  position: relative;
+  right: 270px;
+  bottom: 150px;
+}
+
+#rabbit-wink {
+  display: block;
+  z-index: -1;
+  width: 250px;
+  position: relative;
+  right: 270px;
+  bottom: 150px;
+}
+
+#rabbit-drop {
+  display: block;
+  z-index: -1;
+  width: 250px;
+  position: relative;
+  right: 270px;
+  bottom: 150px;
+}
+
+#emo-heart {
+  display: block;
+  z-index: -1;
+  width: 250px;
+  position: relative;
+  left: 470px;
+  bottom: 150px;
+}
+
+#emo-think {
+  display: block;
+  z-index: -1;
+  width: 250px;
+  position: relative;
+  left: 470px;
+  bottom: 210px;
+}
+
+#emo-sup {
+  display: block;
+  z-index: -1;
+  width: 250px;
+  position: relative;
+  left: 470px;
+  bottom: 180px;
+}
+
+#emo-laugh {
+  display: block;
+  z-index: -1;
+  width: 250px;
+  position: relative;
+  left: 470px;
+  bottom: 170px;
+}
+
+.pull-comment {
+  background: linear-gradient(to top, #adfe4a 40%, transparent 40%);
+}
+
+.answer1-comment {
+  background: linear-gradient(to top, #fef54a 40%, transparent 40%);
+}
